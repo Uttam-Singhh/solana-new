@@ -28,9 +28,10 @@ ALCHEMY_RPC_URL=https://solana-mainnet.g.alchemy.com/v2/YOUR_KEY
 ALCHEMY_API_KEY=YOUR_KEY
 ```
 
-### Fallback: the other primary, QuickNode, or public RPC
+### Fallback: QuickNode, the other primary, or public RPC
 ```
-FALLBACK_RPC_URL=https://your-fallback-endpoint.com
+QUICKNODE_RPC_URL=https://your-quicknode-endpoint.com
+FALLBACK_RPC_URL=https://your-public-fallback-endpoint.com
 ```
 
 ### In Code
@@ -38,6 +39,7 @@ FALLBACK_RPC_URL=https://your-fallback-endpoint.com
 const connection = new Connection(
   process.env.HELIUS_RPC_URL ||
     process.env.ALCHEMY_RPC_URL ||
+    process.env.QUICKNODE_RPC_URL ||
     process.env.FALLBACK_RPC_URL,
   { commitment: "confirmed" }
 );
