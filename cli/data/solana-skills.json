@@ -280,6 +280,15 @@
       "category": null
     },
     {
+      "slug": "lifi-skill",
+      "title": "LI.FI Skill",
+      "description": "AI coding skill for LI.FI cross-chain infrastructure covering quotes, routes, status tracking, chains, tokens, tools, SDK usage, and Solana-specific execution guidance.",
+      "url": "https://github.com/sendaifun/skills/tree/main/skills/lifi",
+      "category": {
+        "labelKey": "defi"
+      }
+    },
+    {
       "slug": "helius-skill",
       "title": "Helius Skill",
       "description": "AI coding skill for Helius RPC infrastructure covering DAS API, Enhanced Transactions, and webhooks.",
